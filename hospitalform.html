@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HOSPITAL ADMISSION FORM</title>
+
+    <style>
+        form {
+            border: 3px solid black;
+            margin: 3px;
+            background-image: url("hospital/national-cancer-institute.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+
+        .personaldetail {
+            border: 2px solid black;
+            border-radius: 3px;
+            padding: 4px 4px;
+            width: 80%;
+            margin: 3px 0;
+            display: inline-block;
+            box-snap: block-end;
+
+
+        }
+
+        .format {
+            font-size: larger;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h4 style="text-align: center; font-family: 'Bell MT'; font-size: large ; color: crimson;">Patient Admission Form
+    </h4>
+
+    <form action="#">
+
+        <h3 style="color:darkred; font-size: x-large;">Patient Details</h3>
+
+        <div>
+            <label class="format"> Surname/Family name</label> <br>
+            <input class="personaldetail" type="text" name="Surname" placeholder="e.g Khan " required>
+        </div>
+
+        <div>
+            <label class="format"> First Name</label> <br>
+            <input class="personaldetail" type="text" name="firstname" placeholder="e.g Alex " required>
+        </div>
+
+        <div>
+            <label class="format">Second Name </label> <br>
+            <input class="personaldetail" type="text" name="Secondname" placeholder="e.g Rider " required>
+        </div>
+
+        <div>
+            <label class="format">Date of Birth</label> <br>
+            <input class="personaldetail" type="datetime-local" name="DOB" required>
+        </div>
+
+        <div>
+            <span>
+                <label> Gender</label>
+                <input type="radio" name="Gender" value="male">
+                <label> Male</label>
+                <input type="radio" name="Gender" value="Female">
+                <label> Female</label>
+                <input type="radio" name="Gender" value="Prefer not to say">
+                <label> Prefer not to say</label>
+            </span>
+        </div>
+
+        <div>
+            <label class="format"> Telephone</label> <br>
+            <input class="personaldetail" type="tel" name="Telephone no." placeholder="e.g 254712345678">
+        </div>
+
+        <div>
+            <label class="format">Residential Address</label> <br>
+            <input class="personaldetail" type="text" name="residential address" placeholder="e.g Turkana" required>
+        </div>
+
+        <div>
+            <label class="format"> Email Address</label> <br>
+            <input class="personaldetail" type="email" name="Email address" placeholder="username@hotmail.com">
+        </div>
+
+        <hr style="border: 1.5px solid darkred">
+
+        <h3 style="color:darkred; font-size: x-large;">Next of Kin</h3>
+        <div>
+            <label class="format"> First Name</label> <br>
+            <input class="personaldetail" type="text" name="firstname" placeholder="e.g Alex " required>
+        </div>
+
+        <div>
+            <label class="format"> Second name</label> <br>
+            <input class="personaldetail" type="text" name="secondname" placeholder="e.g Rider " required>
+        </div>
+
+        <div>
+            <label class="format"> Telephone</label> <br>
+            <input class="personaldetail" type="tel" name="telephone no" placeholder="e.g 254712345678 " required>
+        </div>
+
+        <div>
+            <label class="format"> Relationship to patient</label> <br>
+            <input class="personaldetail" type="text" name="relationship" placeholder="e.g husband/wife/father/child "
+                required>
+        </div>
+
+        <div>
+            <label class="format">Residential Address</label> <br>
+            <input class="personaldetail" type="text" name="residentialaddress" placeholder="e.g Turkana" required>
+        </div>
+
+        <hr style="border: 1.5px solid darkred">
+
+        <h3 style="color:darkred; font-size: x-large;">Physician Details</h3>
+
+        <div>
+            <label class="format">First Name</label> <br>
+            <input class="personaldetail" type="text" name="Firstname" placeholder="e.g alex" required>
+        </div>
+
+        <div>
+            <label class="format">Second Name </label> <br>
+            <input class="personaldetail" type="text" name="Secondname" placeholder="e.g Rider " required>
+        </div>
+
+        <div>
+            <label class="format">Nursing Unit Number</label> <br>
+            <input class="personaldetail" type="tel" name="telephone no" placeholder="e.g 254712345678 " required>
+        </div>
+
+        <div>
+            <label class="format">Patient admit date</label> <br>
+            <input class="personaldetail" type="datetime-local" name="DOB" required>
+        </div>
+
+        <div>
+            <label class="format">Completed By:</label>
+            <label class="format">Signature:</label>
+            <input type="text" name="signature" required>
+        </div>
+
+        <div>
+            <label class="format">Date of Sign</label> <br>
+            <input class="personaldetail" type="datetime-local" name="DOB" required>
+        </div>
+
+        <hr style="border: 1.5px solid darkred">
+
+        <div>
+            <label class="format"> Diagnosis:</label>
+            <input class="personaldetail" type="text" name="Diagnosis"> <br>
+        </div>
+
+        <div>
+            <label class="format">Allergies:</label>
+            <input class="personaldetail" type="text" name="Allergies">
+        </div>
+
+        <hr style="border: 1.5px solid darkred">
+
+        <h3 style="color:darkred; font-size: x-large;">Payment details</h3>
+
+        <p>
+            How will your procedure be paid for? Tick and complete as applicable.
+        </p>
+
+        <div>
+            <span>
+                <label> Payment:</label>
+                <input type="radio" name="Payment" value="Health Insurance">
+                <label> Health Insurance</label>
+                <input type="radio" name="Payment" value="Cheque">
+                <label> Cheque</label>
+                <input type="radio" name="Payment" value="Cash">
+                <label> Cash</label>
+                <input type="radio" name="Payment" value="Credit Card">
+                <label> Credit Card</label>
+                <input type="radio" name="Payment" value="Debit Card">
+                <label> Debit Card</label>
+                <input type="radio" name="Payment" value="Internet Banking">
+                <label> Internet Banking</label>
+            </span>
+        </div>
+
+        <div class="border-top: 5px;">
+            <input type="submit" name="submit" value="SUBMIT" onclick="alert(Thank you!)">
+        </div>
+
+
+    </form>
+</body>
+
+</html>
